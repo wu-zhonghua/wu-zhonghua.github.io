@@ -1,332 +1,646 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Welcome to Zhonghua Wu's Personal Homepage</title>
-
-  <meta name="author" content="Zhonghua Wu (吴仲华)">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhonghua Wu</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link rel="shortcut icon" type="image/x-icon" href="images/misc/photo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.7.5-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
+  <script defer src="font-awesome/js/brands.min.js"></script>
+  <script defer src="font-awesome/js/regular.min.js"></script>
+  <script defer src="font-awesome/js/fontawesome.min.js"></script>
+    <style>
+      .red {
+        color: rgb(238, 76, 44);
+        font-style: normal;
+      }
+      .blue {
+        color: rgb(238, 76, 44);
+        font-style: normal;
+      }
+       
+      #intro {
+       margin-top: 0em !important;
+      }
+      
+      .content h3 {
+       margin-bottom: 1em!important;
+       margin-top: 2em!important;
+      }
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      .content figure {
+       width: 90%;
+       display: flex;
+       align-items: center;
+       overflow: hidden;
+       margin-left: auto!important;
+       margin-right: auto!important;
+      }
+      
+      .columns:not(:last-child) {
+       margin-bottom: 1.75rem!important;
+      }
+
+      #sidebar {
+        width: 75%;
+      }
+
+      @media screen and (min-width: 769px), print {
+        .column.is-2_5, .column.is-2-tablet {
+          flex: none;
+          width: 20%;
+        }
+      }
+</style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Zhonghua Wu (吴仲华)</name>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2_5">
+          <div class="sticky">
+            <figure class="image" style="width: 11.6rem; margin-top: 6px;">
+              <img src="images/misc/photo.jpg">
+            </figure>
+            <div class="content">
+              <h2 style="margin-top: 1em">Zhonghua Wu</h2>
+              <p>
+                <b>SenseTime International</b><br/> 
+                Singapore<br/> 
+              </p>
+            </div>
+            <!-- social network icons -->
+            <div class="social">
+              <a href="https://github.com/wu-zhonghua" target="_blank">
+                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a;"></span>
+              </a>
+              <a href="https://scholar.google.com.sg/citations?user=wMDgLCYAAAAJ&hl=en" target="_blank">
+                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+              <a href="https://sg.linkedin.com/in/zhonghua-wu-94b2b6190" target="_blank">
+                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+              <a href="mailto:mr.zhonghuawu@gmail.com" target="_blank">
+                <span class="fa-regular fa-envelope fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
+              </a>
+            </div>
+            <!-- slogon -->
+          
+            <div id="sidebar" class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#publications">Main Publications</a></li>
+                <!-- <li><a href="#awards">Awards</a></li> -->
+              </ul>
+            </div>
+
+            <div class="slogon">
+              <p>Welcome to my homepage!</p> 
+            </div>
+          </div>
+
+          
+
+        </div>
+        <div class="column right-panel">
+          <div class="content">
+
+
+            <!--About Me-->
+            <h2 id="intro">About Me</h2>
+            <p> Zhonghua Wu is currently a Researcher at SenseTime International. Prior to that, he completed his PhD
+              at the School of Computer Science and Engineering, <a href="https://www.ntu.edu.sg/">Nanyang
+                Technological Unversity</a>, supervised by <a href="https://guosheng.github.io/">Prof. Lin
+                Guosheng</a> and <a href="https://jianfei-cai.github.io/">Prof. Cai Jianfei</a>. Previously, he
+              recieved a bachlor
+              degree from College of Electronic Engineering (EE) at <a href="https://www.uestc.edu.cn/">University
+                of Electronic Science and Technology of China</a> (UESTC) in 2017.
+            </p>
+            <p>His research interests are broadly in computer vision, ncluding AIGC, image restoration, image detection, segmentation, point cloud segmentation, etc.
+            </p>
+            
+            <!--Experience-->
+            <h2 id="experiences" style="margin-bottom: 25px;">Experiences</h2>
+            
+            <article class="columns">
+              
+              <div class="column is-2" >
+                <div class="image">
+                  <img src="images/misc/sensetime.png" >
+                </div>
+              </div>
+             
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b> Algorithm Researcher </b> | SenseTime International<br>
+                    Nov 2022 - Now
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-2" >
+                <div class="svg">
+                  <img src="images/misc/NTU.jpg" >
+                </div>
+              </div>      
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Reseach Assistant</b> | Nanyang Technological University<br>
+                    Nov 2017 - Nov 2022
                   </p>
-                  <p> Zhonghua Wu is currently a Researcher at SenseTime International. Prior to that, he completed his PhD
-                    at the School of Computer Science and Engineering, <a href="https://www.ntu.edu.sg/">Nanyang
-                      Technological Unversity</a>, supervised by <a href="https://guosheng.github.io/">Prof. Lin
-                      Guosheng</a> and <a href="https://jianfei-cai.github.io/">Prof. Cai Jianfei</a>. Previously, he
-                    recieved a bachlor
-                    degree from College of Electronic Engineering (EE) at <a href="https://www.uestc.edu.cn/">University
-                      of Electronic Science and Technology of China</a> (UESTC) in 2017.
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+             
+              <div class="column is-2">
+                <figure class="image">
+                  <img src="images/misc/Minieye.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Algorithm Researcher Intern</b> | Minieye<br>
+                    Aug 2017 - Oct 2017
                   </p>
-                  <p>His research interests are broadly in computer vision, including image generation, image detection
-                    and segmentation, point cloud segmentation, etc.
+                </div>
+              </div>
+            </article>
+
+
+
+            <!--Main Publications-->
+            <h2 id="publications">
+              Main Publications
+              <span style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .2rem;">
+                <a href="https://scholar.google.com.sg/citations?user=wMDgLCYAAAAJ&hl=en" target="_blank" style="font-size: 20px;">
+                  [Google Scholar]
+                </a>
+              </span>
+            </h2>
+
+            <!--List of publications-->  
+            <!-- New Publications -->
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/MOVA.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>MOWA: Multiple-in-One Image Warping Model</b><br>
+                    Kang Liao, Zongsheng Yue, <b>Zhonghua Wu</b>, Chen Change Loy<br>
+                    <i>arXiv preprint, 2024</i><br>
+                    <a href="https://arxiv.org/abs/2404.10716" target="_blank">[arXiv]</a>
+                    <a href="https://kangliao929.github.io/projects/mowa/" target="_blank">[Project Page]</a>
+                    <a href="https://github.com/kangliao929/MOWA" target="_blank">[Code]</a>
                   </p>
-                  <p style="text-align:center">
-                    <a href="mailto:zhonghua001@e.ntu.edu.sg">Email</a> &nbsp/&nbsp
-                    <a href="data/CV_Wu_Zhonghua.pdf">CV</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com.sg/citations?user=wMDgLCYAAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://github.com/wu-zhonghua">Github</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/zhonghua-wu-94b2b6190">Linkedin</a>
+                </div>
+              </div>
+            </article>
 
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/DI-Net.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>DI-Net: Decomposed Implicit Garment Transfer Network for Digital Clothed 3D Human</b><br>
+                    Xiaojing Zhong, Yukun Su, <b>Zhonghua Wu</b>, Guosheng Lin, Qingyao Wu<br>
+                    <i>arXiv preprint, 2023</i><br>
+                    <a href="https://arxiv.org/abs/2311.16818" target="_blank">[arXiv]</a>
                   </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="data/photo.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="data/photo.jpg" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Publications</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-
-              <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/miccai22.png"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/miccai22.png" class="hoverZoomLink"></a>
-                  </div>
-
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Exploring Smoothness and Class-Separation for Semi-supervised Medical Image Segmentation
-                  </papertitle>
-
-                  <br>
-                  Yicheng Wu,
-                  <strong>Zhonghua Wu</strong>,
-                  Qianyi Wu,
-                  Zongyuan Ge,
-                  Jianfei Cai
-                  <br>
-                  <em>MICCAI</em>, 2022 &nbsp <font color="red"></font>
-                  <br>
-                  <a href="https://doi.org/10.1016/j.media.2022.102530">arXiv</a>
-                  /
-                  <a href="https://github.com/ycwu1997/MC-Net">code</a>
-
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/ECCV2022.png"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/ECCV2022.png" class="hoverZoomLink"></a>
-                  </div>
-
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Dual Adaptive Transformations for Weakly Supervised Point Cloud Segmentation</papertitle>
-
-                  <br>
-                  <strong>Zhonghua Wu</strong>,
-                  Yicheng Wu,
-                  Guosheng Lin,
-                  Jianfei Cai,
-                  Chen Qian
-                  <br>
-                  <em>ECCV</em>, 2022 &nbsp <font color="red"></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2207.09084.pdf">arXiv</a>
-                  /
-                  <a href="https://github.com/wu-zhonghua/DAT">code</a>
-
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/ICCV2021FewShot.JPG"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/ICCV2021FewShot.JPG" class="hoverZoomLink"></a>
-                  </div>
-
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Learning Meta-class Memory for Few-Shot Semantic Segmentation</papertitle>
-
-                  <br>
-                  <strong>Zhonghua Wu</strong>,
-                  Xiangxi Shi,
-                  Guosheng Lin,
-                  Jianfei Cai
-                  <br>
-                  <em>ICCV</em>, 2021 &nbsp <font color="red"></font>
-                  <br>
-                  <a href="https://arxiv.org/abs/2108.02958">arXiv</a>
-                  /
-                  <a href="https://github.com/wu-zhonghua/MM-Net">code</a>
-
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/acm2021fashion.JPG"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/acm2021fashion.JPG" class="hoverZoomLink"></a>
-                  </div>
-
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>MV-TON: Memory-based Video Virtual Try-on network</papertitle>
-
-                  <br>
-                  Xiaojing Zhong*,
-                  <strong>Zhonghua Wu</strong>*,
-                  Taizhe Tan,
-                  Guosheng Lin,
-                  Qingyao Wu
-                  <br>
-                  (* indicates equal contribution)
-                  <br>
-                  <em>ACM MM</em>, 2021 &nbsp <font color="red"></font>
-                  <br>
-                  <a href="https://arxiv.org/abs/2108.07502">arXiv</a>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/food.JPG"><img style="width:100%;max-width:100%" alt="image" src="data/food.JPG"
-                        class="hoverZoomLink"></a>
-                  </div>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Portable Food‐Freshness Prediction Platform Based on Colorimetric Barcode Combinatorics
-                    and Deep Convolutional Neural Networks</papertitle>
-                  <br>
-                  Lingling Guo, Ting Wang, <strong>Zhonghua Wu</strong>, Jianwu Wang, Ming Wang, Zequn Cui, Shaobo Ji,
-                  Jianfei Cai, Chuanlai Xu, Xiaodong Chen
-                  <br>
-                  <em>Advanced Materials</em> &nbsp
-                  <br>
-                  <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.202004805">Wiley Online Library</a>
-                  <p></p>
-                </td>
-              </tr>
-
-
-
-
-              <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/CVPR2020Webly.JPG"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/CVPR2020Webly.JPG" class="hoverZoomLink"></a>
-                  </div>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Exploring Bottom-up and Top-down Cues with Attentive Learning for Webly Supervised Object
-                    Detection</papertitle>
-                  <br>
-                  <strong>Zhonghua Wu</strong>,
-                  Qingyi Tao,
-                  Guosheng Lin,
-                  Jianfei Cai
-                  <br>
-                  <em>CVPR</em>, 2020 &nbsp
-                  <br>
-                  <a href="https://arxiv.org/abs/2003.09790">arXiv</a>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/ACM2019m2e.JPG"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/ACM2019m2e.JPG" class="hoverZoomLink"></a>
-                  </div>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>M2E-Try On Net: Fashion from Model to Everyone</papertitle>
-                  <br>
-                  <strong>Zhonghua Wu</strong>,
-                  Guosheng Lin,
-                  Qingyi Tao,
-                  Jianfei Cai
-                  <br>
-                  <em>ACM MM</em>, 2019 &nbsp
-                  <br>
-                  <a href="https://arxiv.org/abs/1811.08599">arXiv</a>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="three">
-                    <a href="data/IVCparsing.JPG"><img style="width:100%;max-width:100%" alt="image"
-                        src="data/IVCparsing.JPG" class="hoverZoomLink"></a>
-                  </div>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Keypoint Based Weakly Supervised Human Parsing</papertitle>
-                  <br>
-                  <strong>Zhonghua Wu</strong>,
-                  Guosheng Lin,
-                  Jianfei Cai,
-                  <br>
-                  <em>Image and Vision Computing (IVC)</em> &nbsp
-                  <br>
-                  <a href="https://arxiv.org/abs/1809.05285">arXiv</a>
-                  <p></p>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Miscellaneous</heading>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Reviewer</papertitle>
-                  <br>
-                  - CVPR, ICCV, CVPR, AAAI, ACM MM, etc.
-                  <br>
-                  - T-PAMI, IJCV, T-MM, T-NNLS, TVCJ, etc.
-
-                  <p></p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
-
-
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-
-                    <br>
-                    Design and source code from <a href="https://jonbarron.info/"> Jon Barron's website</a>.
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/SARA.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Sara: Controllable makeup transfer with spatial alignment and region-adaptive normalization</b><br>
+                    Xiaojing Zhong, Xinyi Huang, <b>Zhonghua Wu</b>, Guosheng Lin, Qingyao Wu<br>
+                    <i>arXiv preprint, 2023</i><br>
+                    <a href="https://arxiv.org/abs/2311.16828" target="_blank">[arXiv]</a>
                   </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/RAC-Net.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Reliability-Adaptive Consistency Regularization for Weakly-Supervised Point Cloud Segmentation</b><br>
+                    <b>Zhonghua Wu</b>, Yicheng Wu, Guosheng Lin, Jianfei Cai<br>
+                    <i>International Journal of Computer Vision, 2024</i><br>
+                    <a href="https://arxiv.org/abs/2303.05164" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/wu-zhonghua/RAC-Net" target="_blank">[Code]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/CVPR2024.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Aware Visual Grounding in 3D Scenes</b><br>
+                    Xiangxi Shi, <b>Zhonghua Wu</b>, Stefan Lee<br>
+                    <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024</i><br>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Shi_Viewpoint-Aware_Visual_Grounding_in_3D_Scenes_CVPR_2024_paper.pdf" target="_blank">[arXiv]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/AAAI2024.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Modeling continuous motion for 3D point cloud object tracking</b><br>
+                    Zhipeng Luo, Gongjie Zhang, Changqing Zhou, <b>Zhonghua Wu</b>, Qingyi Tao, Lewei Lu, Shijian Lu<br>
+                    <i>Proceedings of the AAAI Conference on Artificial Intelligence, 2024</i><br>
+                    <a href="https://arxiv.org/abs/2303.07605" target="_blank">[arXiv]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/IJCV2024.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Harmonizing base and novel classes: A class-contrastive approach for generalized few-shot segmentation</b><br>
+                    Weide Liu, <b>Zhonghua Wu</b>, Yang Zhao, Yuming Fang, Chuan-Sheng Foo, Jun Cheng, Guosheng Lin<br>
+                    <i>International Journal of Computer Vision, 2024</i><br>
+                    <a href="https://arxiv.org/abs/2303.13724" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/liuweide01/HBNC" target="_blank">[Code]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/PatternRecognition2024.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>LCReg: Long-tailed image classification with latent categories based recognition</b><br>
+                    Weide Liu, <b>Zhonghua Wu</b>, Yiming Wang, Henghui Ding, Fayao Liu, Jie Lin, Guosheng Lin<br>
+                    <i>Pattern Recognition, 2024</i><br>
+                    <a href="https://arxiv.org/abs/2309.07186" target="_blank">[arXiv]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/NeurIPS2024.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Towards robust and expressive whole-body human pose and shape estimation</b><br>
+                    Hui En Pang, Zhongang Cai, Lei Yang, Qingyi Tao, <b>Zhonghua Wu</b>, Tianwei Zhang, Ziwei Liu<br>
+                    <i>Advances in Neural Information Processing Systems, 2023</i><br>
+                    <a href="https://arxiv.org/abs/2312.08730" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/robosmplx/robosmplx" target="_blank">[Code]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+
+            
+            
+            
+            <!-- 2023 Publications -->
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/MICCAI2023.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Coactseg: Learning from heterogeneous data for new multiple sclerosis lesion segmentation</b><br>
+                    Yicheng Wu, <b>Zhonghua Wu</b>, Hengcan Shi, Bjoern Picker, Winston Chong, Jianfei Cai<br>
+                    <i>International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023</i><br>
+                    <a href="https://arxiv.org/abs/2307.04513" target="_blank">[arXiv]</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            
+
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/miccai22.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Exploring Smoothness and Class-Separation for Semi-supervised Medical Image Segmentation</b><br>
+                    Yicheng Wu, <b>Zhonghua Wu</b>, Qianyi Wu, Zongyuan Ge, Jianfei Cai<br>
+                    <i>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2022</i><br>
+                    <a href="https://arxiv.org/abs/2203.01324" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/ycwu1997/SS-Net" target="_blank">[Code]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/ECCV2022.png">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Dual Adaptive Transformations for Weakly Supervised Point Cloud Segmentation</b><br>
+                    <b>Zhonghua Wu</b>, Yicheng Wu, Guosheng Lin, Jianfei Cai, Chen Qian<br>
+                    <i>European Conference on Computer Vision (ECCV), 2022</i><br>
+                    <a href="https://arxiv.org/abs/2207.09084" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/wu-zhonghua/DAT" target="_blank">[Code]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/ICCV2021FewShot.JPG">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Learning Meta-class Memory for Few-Shot Semantic Segmentation</b><br>
+                    <b>Zhonghua Wu</b>, Xiangxi Shi, Guosheng Lin, Jianfei Cai<br>
+                    <i>International Conference on Computer Vision (ICCV), 2021</i><br>
+                    <a href="https://arxiv.org/abs/2108.02958" target="_blank">[arXiv]</a>
+                    <a href="https://github.com/wu-zhonghua/MM-Net" target="_blank">[Code]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/acm2021fashion.JPG">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>MV-TON: Memory-based Video Virtual Try-on network</b><br>
+                    Xiaojing Zhong*, <b>Zhonghua Wu</b>*, Taizhe Tan, Guosheng Lin, Qingyao Wu<br>
+                    (* indicates equal contribution)<br>
+                    <i>ACM International Conference on Multimedia (ACM MM), 2021</i><br>
+                    <a href="https://arxiv.org/abs/2108.07502" target="_blank">[arXiv]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/food.JPG">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Portable Food‐Freshness Prediction Platform Based on Colorimetric Barcode Combinatorics and Deep Convolutional Neural Networks</b><br>
+                    Lingling Guo, Ting Wang, <b>Zhonghua Wu</b>, Jianwu Wang, Ming Wang, Zequn Cui, Shaobo Ji, Jianfei Cai, Chuanlai Xu, Xiaodong Chen<br>
+                    <i>Advanced Materials</i><br>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.202004805" target="_blank">[Wiley Online Library]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/CVPR2020Webly.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>Exploring Bottom-up and Top-down Cues with Attentive Learning for Webly Supervised Object Detection</b><br>
+                    <b>Zhonghua Wu</b>, Qingyi Tao, Guosheng Lin, Jianfei Cai<br>
+                    <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020</i><br>
+                    <a href="https://arxiv.org/abs/2003.09790" target="_blank">[arXiv]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="columns">
+              <div class="column is-3">
+                <figure class="image">
+                  <img src="images/publications/ACM2019m2e.JPG">
+                </figure>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <p>
+                    <b>M2E-Try On Net: Fashion from Model to Everyone</b><br>
+                    <b>Zhonghua Wu</b>, Guosheng Lin, Qingyi Tao, Jianfei Cai<br>
+                    <i>ACM International Conference on Multimedia (ACM MM), 2019</i><br>
+                    <a href="https://arxiv.org/abs/1811.08599" target="_blank">[arXiv]</a><br>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            
+
+            
+
+  
+
+            
+            
+            <!-- Awards-->
+            <!-- <h2 id="awards">Awards</h2>
+            <ul>
+              <li>Excellent Postgraduate Students' Award, Zhejiang University. 2024</li>
+              <li>Award of Honor for Graduate, Zhejiang University. 2022, 2023</li>
+              <li>Chen Junshi Scholarship, Zhejiang University. 2018</li>
+              <li>Honorable Mention, The Mathematical Contest in Modeling. 2018</li>
+              <li>Second Prize of The 6th National College Students Optoelectronic Design Competition. 2018</li>
+              <li>Third-class Scholarship of Zhejiang University. 2018 </li>
+              <li>Academic Excellence Award, Zhejiang University. 2018</li>
+              <li>Excellent Student Leader Award, Zhejiang University. 2017</li>
+              <li>Social Work Leadership Award, Zhejiang University. 2017</li>
+              <li>Foreign Exchange Award, Oxford University. 2017</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer class="container">
+      <br><hr>
+      <div class="row" style="text-align: center">
+        <a href="https://clustrmaps.com/site/1c3tt"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=f1UBPWaHr8nwf2H9ZKt_5UIsH2hvpqu96qBqnHt8kso&cl=ffffff" /></a>
+      </div>
+     
+<!--         <div class="footer_social" style="text-align: center">
+
+        <span style="display:inline; font-size: 2em; margin-right: 7px; color: #4a4a4a;">Haoying Li</span>
+        
+        <a href="https://github.com/LeiaLi" target="_blank">
+          <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a;"></span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=inMLhvkAAAAJ&hl=zh-CN" target="_blank">
+          <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 6px"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/haoying-li-388863265/" target="_blank">
+          <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 6px"></span>
+        </a>
+        <a href="mailto:lhaoying13@gmail.com" target="_blank">
+          <span class="fa-regular fa-envelope fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 6px"></span>
+        </a>-->
+      
+      <div class="footer_social" style= "display:inline; float:right;  font-size: 0.5em;">
+          © Thanks Zhexin Liang for website support
+      </div>
+    </footer>
+  </section>
+
+
+  <script>
+
+    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
+
+    $('#sidebar').on('click', 'a', function(){
+      activate($(this))
+    });
+    
+    $(window).on('resize', debounce(calculateBoundary, 300));
+
+    $(document).on('scroll', debounce(judgeScroll, 300));
+
+    calculateBoundary();
+    judgeScroll();
+    
+    function  calculateBoundary() {
+      offsetList = $hashList.map(function(idx, ele){
+        return $(ele.hash).offset().top
+      });
+      maxScrollHeight = $(document).height() - $(window).height()
+    }
+    
+    function judgeScroll() {
+      var tps = $("html").scrollTop()
+              ? $("html").scrollTop()
+              : $("body").scrollTop(),
+              len = offsetList.length;
+      if(tps >= maxScrollHeight-10){
+        activate($hashList.eq(len-1));
+        return
+      }
+      for(var i=0; i<len; i++){
+       if(tps+50<offsetList[i]){
+          activate($hashList.eq(Math.max(0,i-1)));
+          return
+        }
+      }
+    }
+
+    function activate(ele){
+      $hashList.removeClass('is-active');
+      ele.addClass('is-active');
+    }
+
+    function debounce(fn, delay) {
+      var timeout = null;
+      return function () {
+        var args = arguments;
+        var context = this;
+        if (!timeout) {
+          timeout = setTimeout(function () {
+            timeout = 0;
+            return fn.apply(context, args);
+          }, delay);
+        }
+      };
+    }
+
+
+
+  </script>
+
+
 </body>
 
 </html>
